@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+}
+.accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+.countStyle {
+  width: 31px;
+  height: 31px;
+  border: 1px solid;
+  border-color: #577485;
+  color: #577485;
+  background: #fff;
+}
+
+.accordion-item:has(.show) .countStyle,
+.accordion-item:has(.collapsing) .countStyle {
+  border-color: #008eff;
+  color: #166ee0;
+  background: #e2f1ff;
+}
+.arrow-svg {
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+.accordion-item:has(.show) .arrow-svg {
+  rotate: 180deg;
+}
+.accordion-item:has(.collapsing) .arrow-svg {
+  rotate: 90deg;
+}
+.text-title {
+  color: #233f4d !important;
+}
+.text-subtitle {
+  color: #3b5e71 !important;
+}
+.text-option-title {
+  color: #162d39 !important;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+input {
+  border: none;
+  background: #f7f7f7;
+  padding: 0.5rem 1rem;
+  min-width: 250px;
+  margin-bottom: 1.6rem;
+}
+.react-select__control {
+  border-left: 1px !important;
+  border-right: 1px !important;
+  border-bottom: 1px !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  margin-bottom: 1rem;
+}
